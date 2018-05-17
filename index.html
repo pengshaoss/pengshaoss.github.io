@@ -9,6 +9,11 @@
 			font-family: digit;
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
+        .map {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
 	</style>
 	<link href="default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="jquery.js"></script>
@@ -19,14 +24,23 @@
 <body>
 	<div id="mainDiv">
 		<div id="content">
+            <div class="map">
+                <button onclick="javascript:jump1()">520</button>
+                <button onclick="javascript:jump6()">表白</button>
+                <button onclick="javascript:jump2()">信阳</button>
+                <button onclick="javascript:jump3()">贵溪</button>
+                <button onclick="javascript:jump4()">南昌</button>
+                <button onclick="javascript:jump5()">赣州</button>                
+                <audio src="music3.mp3" controls="controls" loop="loop" id="audioDemo" autoplay="autoplay">亲 您的浏览器不支持html5的audio标签</audio>
+            </div>
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
+				<span class="space"/><span class="comments">* We are both Xinyang Normal University students and programmers,</span><br />
 				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"张文朋"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"李亚倩"</span>);<br />
+				<span class="comments">// May 29, 2017, I told you I love you. </span><br />
 				i.love(u);<br />
 				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
 				u.accepted();<br />
@@ -51,27 +65,24 @@
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						李亚倩, I have fallen in love with you for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+				    Love you forever<br>
+						<div class="signature">- 张文朋</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="copyright">
-			Inspired by <a href="http://www.777moban.com">777moban.com</a> project.<br />
-			Copyright © 2014 <a href='http://777moban.com'>777moban.com</a> 2009-2014
-		</div>
+        
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var displayMode = 1;
 		var together = new Date();
-		together.setFullYear(2010, 10, 2);
+		together.setFullYear(2017, 05, 29);
 		together.setHours(20);
 		together.setMinutes(0);
 		together.setSeconds(0);
@@ -88,8 +99,6 @@
 			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
 			document.body.appendChild(msg);
 			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
 		    document.execCommand("stop");
 		} else {
 			setTimeout(function () {
@@ -105,6 +114,25 @@
 			adjustCodePosition();
 			$("#code").typewriter();
 		}
+        
+        function jump1(){
+            window.location.href = "520/video.html"
+        }
+        function jump2(){
+            window.location.href = "xy/index.html"
+        }
+        function jump3(){
+            window.location.href = "gx/index.html"
+        }
+        function jump4(){
+            window.location.href = "nc/index.html"
+        }
+        function jump5(){
+            window.location.href = "gz/index.html"
+        }
+        function jump6(){
+            window.location.href = "bb/video.html"
+        }
 	</script>
 </body>
 </html>

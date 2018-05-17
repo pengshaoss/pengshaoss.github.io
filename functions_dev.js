@@ -117,7 +117,7 @@ function timeElapse(date, mode) {
 	}
 	hours = current.getHours() - date.getHours();
 	if (hours < 0) {
-		hours += 60;
+		hours += 24;
 		current.setDate(current.getDate() - 1);
 	}
 	if (mode == 1) {
