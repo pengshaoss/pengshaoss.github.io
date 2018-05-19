@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://www.jq22.com/demo/jqueryPxpbl201805072206/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>我们之Xinyang normal university</title>
+<script type="text/javascript" src="./move.js.下载"></script>
+<script type="text/javascript" src="./tuozhuai.js.下载"></script>
+<style type="text/css">
+html, body, div, p, img, a {
+	margin: 0 auto;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	padding: 0px 20px;
+	box-sizing: border-box;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	background-color: #252525;
+}
+.img_100 img {
+	width: 100%;
+	max-width: 100%;
+}
+.margin_bottom_15 {
+	margin-bottom: 15px;
+}
+.text_center {
+	text-align: center;
+}
+.drag_div {
+	margin-top: 30px;
+	width: 1300px;
+	height: 760px;
+	overflow: hidden;
+	position: relative;
+}
+.drag_div>div {
+	background: #fff;
+	padding: 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.drag_div>div.one {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 240px;
+}
+.drag_div>div.two {
+	position: absolute;
+	top: 260px;
+	left: 0;
+	width: 20%;
+	height: 240px;
+}
+.drag_div>div.three {
+	position: absolute;
+	top: 520px;
+	left: 0;
+	width: 20%;
+	height: 240px;
+}
+.drag_div>div.four {
+	position: absolute;
+	top: 0px;
+	left: 21%;
+	width: 37%;
+	height: 760px;
+}
+.drag_div>div.five {
+	position: absolute;
+	top: 0px;
+	left: 59%;
+	width: 20%;
+	height: 280px;
+}
+.drag_div>div.six {
+	position: absolute;
+	top: 300px;
+	left: 59%;
+	width: 20%;
+	height: 220px;
+}
+.drag_div>div.seven {
+	position: absolute;
+	top: 540px;
+	left: 59%;
+	width: 20%;
+	height: 220px;
+}
+.drag_div>div.eight {
+	position: absolute;
+	top: 0px;
+	left: 80%;
+	width: 20%;
+	height: 280px;
+}
+.drag_div>div.nine {
+	position: absolute;
+	top: 300px;
+	left: 80%;
+	width: 20%;
+	height: 220px;
+}
+.drag_div>div.ten {
+	position: absolute;
+	top: 540px;
+	left: 80%;
+	width: 20%;
+	height: 220px;
+}
+.drag_div>div.one img, .drag_div>div.two img, .drag_div>div.three img {
+	width: 100%;
+	height: 180px;
+}
+.drag_div>div.four img {
+	width: 100%;
+	height: 700px;
+}
+.drag_div>div.five img, .drag_div>div.eight img {
+	width: 100%;
+	height: 220px;
+}
+.drag_div>div.six img, .drag_div>div.seven img, .drag_div>div.nine img, .drag_div>div.ten img {
+	width: 100%;
+	height: 160px;
+}
+    
+    .music {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+        }
+    .mp3{
+        position: relative;
+        left: -50%;
+    }
+</style>
+</head>
+<body>
+<div class="drag_div" id="drag_div">
+  <div class="one" style="top: 0px; left: 0px; position: absolute; margin: 0px;">
+    <p class="img_100 margin_bottom_15"><img src="./1.jpg"></p>
+    <p class="text_center">初识佳人</p>
+  </div>
+  <div class="two" style="top: 260px; left: 0px; position: absolute; margin: 0px; cursor: move;">
+    <p class="img_100 margin_bottom_15"><img src="./2.JPG"></p>
+    <p class="text_center">小可爱</p>
+  </div>
+  <div class="three" style="top: 520px; left: 0px; position: absolute; margin: 0px;">
+    <p class="img_100 margin_bottom_15"><img src="./3.JPG"></p>
+    <p class="text_center">浅笑也最美</p>
+  </div>
+  <div class="four" style="top: 0px; left: 273px; position: absolute; margin: 0px; cursor: move;">
+    <p class="img_100 margin_bottom_15"><img src="./4.jpg"></p>
+    <p class="text_center">抱着你，就有了全世界</p>
+  </div>
+  <div class="five" style="top: 0px; left: 767px; position: absolute; margin: 0px;">
+    <p class="img_100 margin_bottom_15"><img src="./5.JPG"></p>
+    <p class="text_center">爱的告白</p>
+  </div>
+  <div class="six" style="top: 300px; left: 767px; position: absolute; margin: 0px;">
+    <p class="img_100 margin_bottom_15"><img src="./6.JPG"></p>
+    <p class="text_center">爱的许诺</p>
+  </div>
+  <div class="seven" style="top: 540px; left: 767px; position: absolute; margin: 0px;">
+    <p class="img_100 margin_bottom_15"><img src="./7.JPG"></p>
+    <p class="text_center">从此，一路有你</p>
+  </div>
+  <div class="eight" style="top: 0px; left: 1040px; position: absolute; margin: 0px;">
+    <p class="img_100 margin_bottom_15"><img src="./8.JPG"></p>
+    <p class="text_center">爱的见证</p>
+  </div>
+  <div class="nine" style="top: 300px; left: 1040px; position: absolute; margin: 0px;">
+    <p class="img_100 margin_bottom_15"><img src="./9.JPG"></p>
+    <p class="text_center">牵着你的手，拥有的是幸福</p>
+  </div>
+  <div class="ten" style="top: 540px; left: 1040px; position: absolute; margin: 0px;">
+    <p class="img_100 margin_bottom_15"><img src="./10.jpg"></p>
+    <p class="text_center">女神毕业啦！</p>
+  </div>
+</div>
+    <div class="music">
+        <div class="mp3"><audio  src="music1.mp3" controls="controls" loop="loop" id="audioDemo" autoplay="autoplay">亲 您的浏览器不支持html5的audio标签</audio>
+        </div>  
+    </div>
+</body></html>
